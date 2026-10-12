@@ -1,0 +1,29 @@
+{
+  "name": "content-studio-universo-editor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host localhost",
+    "build": "tsc -p tsconfig.json && vite build",
+    "deploy": "npm run build && aio app deploy"
+  },
+  "dependencies": {
+    "@adobe/uix-guest": "^1.1.11",
+    "@tiptap/core": "^3.31.4",
+    "@tiptap/extension-image": "^3.31.4",
+    "@tiptap/extension-subscript": "^3.31.4",
+    "@tiptap/extension-superscript": "^3.31.4",
+    "@tiptap/extension-table": "^3.31.4",
+    "@tiptap/extension-text-align": "^3.31.4",
+    "@tiptap/extension-text-style": "^3.31.4",
+    "@tiptap/starter-kit": "^3.31.4",
+    "dompurify": "^3.4.16",
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.8.3",
+    "vite": "6.4.3"
+  }
+}
